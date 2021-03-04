@@ -39,6 +39,7 @@
         remaining: function() {
           const items = this.todos.filter(function(todo) {
             return !todo.isDone;
+            
           });
           return items.length;
         }
