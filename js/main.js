@@ -1,5 +1,8 @@
 (function() {
   'use strict';
+  const likeComponent = Vue.extend({
+    template: '<button>Like</button>'
+  });
 
   const vm = new Vue({
     el: '#app',
@@ -45,6 +48,9 @@
           return !todo.isDone;
         });
       }
+    },
+    components: {
+      'like-component': likeComponent
     }
   });
 })();

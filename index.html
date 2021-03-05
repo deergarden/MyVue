@@ -13,11 +13,14 @@
       My Todos
       <span class="info">({{ remaining.length }}/{{ todos.length }})</span>
     </h1>
-    <ul>
+    <ul class="tasks">
       <li v-for="(todo, index) in todos">
         <input type="checkbox" v-model="todo.isDone">
         <span :class="{done: todo.isDone}">{{ todo.title }}</span>
         <span @click="deleteItem(index)" class="command">[x]</span>
+        <div>
+          <like-component></like-component>
+        </div>
       </li>
       <li v-show="!todos.length">Nothing to do, yay!</li>
     </ul>
