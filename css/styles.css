@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Verdana, sans-serif;
 }
 
 .container {
@@ -25,10 +25,10 @@ body {
 .command {
   font-size: 12px;
   cursor: pointer;
-  color: red;
+  color: #08c;
 }
 
-#app ul{
+#app ul {
   padding: 0;
   list-style: none;
 }
@@ -38,6 +38,8 @@ body {
   color: #bbb;
 }
 
-#app h1 > button {
-  float: right;
+.info {
+  color: #bbb;
+  font-size: 12px;
+  font-weight: normal;
 }
